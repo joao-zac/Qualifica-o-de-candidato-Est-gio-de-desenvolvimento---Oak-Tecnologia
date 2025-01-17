@@ -1,7 +1,6 @@
 import "./App.css"
 import OAKlogo from "../public/oak-logo.png"
 import { Input } from "./Components/Input/Input"
-import { Button } from "./Components/Button/Button"
 import { useState } from "react"
 
 function App() {
@@ -11,9 +10,8 @@ function App() {
     valor: "",
     disponibilidade: ""
   })
-  // const [disponibilidade, setDisponibilidade] = useState("")
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLSelectElement>) => {
     const { name, value } = e.target
 
     setData({
@@ -47,8 +45,10 @@ function App() {
           <Input label="Valor" name="valor" type="number" data={data.valor} change={handleChange}/>
 
           <label htmlFor="disponibilidade">Disponível para venda</label>
-          <Button nome="Sim" label="disponibilidade" value="sim" onClick={() => setData({ ...data, disponibilidade: "sim" })} />
-          <Button nome="Não" label="disponibilidade" value="nao" onClick={() => setData({ ...data, disponibilidade: "nao" })} />
+          <select name="disponibilidade" id="disponibilidade" onChange={handleChange}>
+            <option value="true">Sim</option>
+            <option value="false">Não</option>
+          </select>
 
           <button type="submit">Cadastrar</button>
         </form>
