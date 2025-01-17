@@ -1,7 +1,10 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { Home } from './pages/Home/Home.tsx'
+import { BrowserRouter } from 'react-router-dom'
+import { MainRoutes } from './routes.tsx'
 
 createRoot(document.getElementById('root')!).render(
-  <Home />
+  <BrowserRouter>
+    <MainRoutes />
+  </BrowserRouter>
 )

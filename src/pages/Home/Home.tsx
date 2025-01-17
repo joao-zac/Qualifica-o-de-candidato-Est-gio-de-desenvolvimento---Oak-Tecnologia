@@ -1,7 +1,7 @@
 import "./Home.css"
-import OAKlogo from "../../../public/oak-logo.png"
 import { Input } from "../../Components/Input/Input"
 import { useState } from "react"
+import { Header } from "../../Components/Header/Header"
 
 export const Home = () => {
   const [data, setData] = useState({
@@ -27,15 +27,9 @@ export const Home = () => {
 
   return (
     <main>
-      <header>
-        <img src={OAKlogo} alt="OAKlogo" />
-        
-        <nav>
-          <a href="#Cadastro">Cadastro</a>
-          <a href="#Cadastro">Listagem</a>
-        </nav>
-      </header>
       
+      <Header />
+
       <section>
         <h1>Cadastro</h1>
         <form onSubmit={handleSubmit}>
