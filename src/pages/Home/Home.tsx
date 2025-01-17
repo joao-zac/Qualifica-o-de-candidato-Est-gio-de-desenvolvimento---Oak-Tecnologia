@@ -1,9 +1,9 @@
-import "./App.css"
-import OAKlogo from "../public/oak-logo.png"
-import { Input } from "./Components/Input/Input"
+import "./Home.css"
+import OAKlogo from "../../../public/oak-logo.png"
+import { Input } from "../../Components/Input/Input"
 import { useState } from "react"
 
-function App() {
+export const Home = () => {
   const [data, setData] = useState({
     nome: "",
     descricao: "",
@@ -59,5 +59,3 @@ function App() {
     </main>
   )
 }
-
-export default App
