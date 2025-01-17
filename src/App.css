@@ -38,4 +38,22 @@ section form {
     display: flex;
     flex-direction: column;
     width: 50%;
+    /* background-color: azure; */
+}
+
+section form .menu-div {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5rem;
+}
+
+section form button {
+    margin: 1rem 5rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    background-color: #002828;
+    color: #FFFF;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
 }

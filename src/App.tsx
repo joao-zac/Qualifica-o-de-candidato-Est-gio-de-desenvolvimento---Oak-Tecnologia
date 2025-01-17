@@ -44,12 +44,15 @@ function App() {
           <Input label="Descrição" name="descricao" type="text" data={data.descricao} change={handleChange}/>
           <Input label="Valor" name="valor" type="number" data={data.valor} change={handleChange}/>
 
-          <label htmlFor="disponibilidade">Disponível para venda</label>
-          <select name="disponibilidade" id="disponibilidade" onChange={handleChange}>
-            <option value="true">Sim</option>
-            <option value="false">Não</option>
-          </select>
+          <div className="menu-div">
+            <label htmlFor="disponibilidade">Disponível para venda</label>
 
+            <select name="disponibilidade" id="disponibilidade" onChange={handleChange}>
+              <option value="true">Sim</option>
+              <option value="false">Não</option>
+            </select>
+          </div>
+          
           <button type="submit">Cadastrar</button>
         </form>
       </section>
