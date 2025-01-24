@@ -1,7 +1,7 @@
 <h1 align="center">Cadastro e listagem</h1>
 <div align="center">
 
-<p align="center"><strong>Status do Projeto:<br></strong> <i>Em desenvolvimento</i> 🚧</p>
+<p align="center"><strong>Status do Projeto:<br></strong> <i>Concluído</i> ✅</p>
 
 </div>
 <p align="center">
@@ -68,21 +68,21 @@ Este site foi construído com:
 
 - **Cadastro:**
 
-  - [🚧] Nome do produto - campo de texto;
+  - [✅] Nome do produto - campo de texto;
 
-  - [🚧] Descrição do produto - campo de texto;
+  - [✅] Descrição do produto - campo de texto;
 
-  - [🚧] Valor do produto - campo de valor;
+  - [✅] Valor do produto - campo de valor;
 
-  - [🚧] Disponível para venda - campo com 2 opções: sim / não;
+  - [✅] Disponível para venda - campo com 2 opções: sim / não;
 
 - **Listagem:**
 
-  - [🚧] Colunas da listagem: nome, valor;
+  - [✅] Colunas da listagem: nome, valor;
 
   - [🚧] Ordenação por valor do menor para o maior;
 
-  - [🚧] Quando cadastrar um novo produto é para abrir a listagem automaticamente;
+  - [✅] Quando cadastrar um novo produto é para abrir a listagem automaticamente;
 
   - [🚧] Deve existir um botão para cadastrar um novo produto a partir da listagem;
 

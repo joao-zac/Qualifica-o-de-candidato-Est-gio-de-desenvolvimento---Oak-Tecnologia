@@ -9,22 +9,32 @@ h1 {
     letter-spacing: .3rem;
 }
 
-.prod-div {
-    display: flex;
-    flex-direction: column;
+table {
+    margin-top: 1rem;
     width: 50%;
+    border-collapse: collapse; 
+    margin-bottom: .2rem; 
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 5rem;
+th, td {
+    border: .1rem solid #ddd; 
+    padding: .8rem; 
+    text-align: left; 
 }
 
-ul li {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    font-size: 1.8rem;
-    margin: .5rem 0;
+th {
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+
+tr:nth-child(even){background-color: #f2f2f2;} 
+
+
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 1.4rem;
+    }
+    th, td {
+        padding: .5rem;
+    }
 }

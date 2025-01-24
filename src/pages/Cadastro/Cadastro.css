@@ -21,6 +21,11 @@ section form .menu-div {
     margin: 1rem 5rem;
 }
 
+section form .menu-div select{
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
 section form button {
     margin: 1rem 5rem;
     padding: 1rem;

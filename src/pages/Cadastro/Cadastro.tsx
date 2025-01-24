@@ -7,13 +7,12 @@ interface CadastroProps {
   onAddData: (data: Product) => void;
 } 
 
-
 export const Cadastro = ({onAddData}: CadastroProps) => {
   const [form, setForm] = useState({
     nome: "",
     descricao: "",
     valor: "",
-    disponibilidade: "",
+    disponibilidade: "true",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -25,9 +24,9 @@ export const Cadastro = ({onAddData}: CadastroProps) => {
     e.preventDefault();
     onAddData(form);
 
-    console.log(form);
     setForm({ nome: "", descricao: "", valor: "", disponibilidade: "" }); 
 
+    alert("Produto cadastrado com sucesso!")
   };
 
 
@@ -45,14 +44,16 @@ export const Cadastro = ({onAddData}: CadastroProps) => {
             <label htmlFor="disponibilidade">Disponível para venda</label>
 
             <select name="disponibilidade" id="disponibilidade" onChange={handleChange} >
-              <option value="true">Sim</option>
-              <option value="false">Não</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
             </select>
           </div>
           
           <button type="submit">Cadastrar</button>
         </form>
       </section>
+
+      {/* {alert ? <span>Produto cadastrado com sucesso!</span> : null} */}
     </>
   )
 }
