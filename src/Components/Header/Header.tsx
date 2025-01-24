@@ -1,16 +1,19 @@
 import "./Header.css"
 import OAKlogo from "../../../public/oak-logo.png"
-import { Link } from "react-router-dom"
 
-export const Header = () => {
+interface propsTypes {
+  setActiveView: (view: "cadastro" | "listagem") => void;
+}
+
+export const Header = ({ setActiveView }: propsTypes) => {
   return (
     <header>
-            <img src={OAKlogo} alt="OAKlogo" />
+      <img src={OAKlogo} alt="OAKlogo" />
             
-            <nav>
-                <Link to="/">Cadastro</Link>
-                <Link to="/dashboard">Dashboard</Link>
-            </nav>
+      <nav>
+        <a onClick={() => setActiveView("cadastro")}>Cadastro</a>
+        <a onClick={() => setActiveView("listagem")}>Listagem</a>
+      </nav>
     </header>
   )
 }

@@ -1,0 +1,30 @@
+.list-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.6rem;
+    letter-spacing: .3rem;
+}
+
+.prod-div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5rem;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.8rem;
+    margin: .5rem 0;
+}
