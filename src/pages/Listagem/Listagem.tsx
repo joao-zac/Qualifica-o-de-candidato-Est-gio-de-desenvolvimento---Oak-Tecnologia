@@ -1,5 +1,6 @@
 import "./Listagem.css";
 import { Product } from "../../interfaces/productInterface";
+import { useList } from "../../hooks/UseList";
 
 interface ListagemProps {
   data: Product[];
@@ -7,17 +8,7 @@ interface ListagemProps {
 
 export const Listagem = ({ data }: ListagemProps) => {
 
-  const porra = data
-  const ary: number[] = []
-
-  porra.forEach((prod) => {
-    ary.push(prod.valor)
-  })
-
-  console.log("flag")
-  console.log(ary)
-  console.log(ary.sort((a, b) => a - b))
-
+  const sortedData = useList(data)
 
   return (
     <div className="list-container">
@@ -39,7 +30,7 @@ export const Listagem = ({ data }: ListagemProps) => {
 
               <tbody>
                 {
-                  data.map((item, index) => (
+                  sortedData.map((item, index) => (
                     <tr key={index}>
                       <td>{item.nome}</td>
                       <td>{item.descricao}</td>
